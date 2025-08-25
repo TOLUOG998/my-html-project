@@ -1,0 +1,100 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* Ensures full height coverage */
+  padding: 1rem;       /* Safe padding for small screens */
+}
+
+/* ===== Card Container ===== */
+.card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Profile Image ===== */
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* ===== Text Info ===== */
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.card p.location {
+  color: #a3ff8f;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.card p.bio {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Buttons ===== */
+.card a {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 100%;
+  max-width: 280px;
+}
+
+.card a:hover {
+  background-color: #4caf50;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem; /* Prevents overflow on very small screens */
+  }
+
+  .card {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card img {
+    width: 75px;
+    height: 75px;
+  }
+}
